@@ -1,0 +1,6 @@
+Flask
+pymongo
+gunicorn
+Werkzeug
+flask-cors
+datetime
