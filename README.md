@@ -26,6 +26,3 @@ This project is a web application that generates personalized travel itineraries
 - **User Management:** Manages user signup and login through Heroku-deployed APIs.
 - **Itinerary Management:** Allows users to fetch, add, and store itineraries dynamically.
 
-## Installation
-
-1. **Clone the Repository:**
