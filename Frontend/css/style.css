@@ -560,9 +560,10 @@ canvas {
 }
 
 #share-review h2 {
-  color: var(--white);
+  color: var(--black);
   font-size: var(--fs-3);
   margin-bottom: 20px;
+  text-align: center;
 }
 
 #review-form {
@@ -581,7 +582,7 @@ canvas {
   font-size: var(--fs-5);
   border-radius: 50px;
   border: 1px solid var(--spanish-gray);
-  color: var(--dark-gray);
+  color: var(--black);
 }
 
 #review-form input[type="number"]::placeholder,
