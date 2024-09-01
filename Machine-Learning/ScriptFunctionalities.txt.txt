@@ -1,0 +1,7 @@
+Script1
+
+Generates a collection of 50 itineraries using GeminiAPI based on different user preferences for a baseline cache database
+
+Script2 
+
+Trains a clustering based knn model on these itineraries to fetch appropriate cached entry based on user input preference.
