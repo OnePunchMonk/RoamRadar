@@ -27,7 +27,7 @@ This project is a web application that generates personalized travel itineraries
 - **Itinerary Management:** Allows users to fetch, add, and store itineraries dynamically.
 
 ### Note:
--** Incase you intend to test the website 
-1)Click on Create a Plan Now!
-2) Sign up with a valid email id 
-3) You'll be able to access the itinerary generator page
+**Incase you intend to test the website 
+-1)Click on Create a Plan Now!
+-2) Sign up with a valid email id 
+-3) You'll be able to access the itinerary generator page
