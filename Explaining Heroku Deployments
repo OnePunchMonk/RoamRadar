@@ -1,0 +1,46 @@
+Deployment 1 
+
+Functionality:
+Save generated itinerary to User-Itinerary Pairs collection(from the cached itineraries)
+Get suitable itinerary from the cached ones
+
+
+Deployment Link:
+https://knnfirst-a4ea992f23e1.herokuapp.com/
+
+Deployment 2
+
+Functionality:
+
+->Generate Itinerary Using GeminiAPI 
+->Save Itinerary generated to itineraries collection(cached itineraries)
+->Save generated itinerary to User-Itinerary Pairs collection(from the Gemini generated itineraries)
+
+
+Deployment Link:
+https://shielded-chamber-62491-e124d88dd0d7.herokuapp.com/
+
+
+Deployment 3 
+
+
+Functionality:
+
+Signup
+Login
+Logout
+Add_Review
+
+Deployment Link:
+https://thawing-eyrie-19296-07f5925e2a04.herokuapp.com/
+
+
+Deployment 4
+
+
+Functionality:
+GetRatings
+Visualisation of reviews Using Charts JS(Get Reviews)
+
+Deployment Link:
+https://calm-escarpment-78164-50c814329612.herokuapp.com/
