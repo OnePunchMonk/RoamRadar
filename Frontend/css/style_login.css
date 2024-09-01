@@ -1,0 +1,125 @@
+
+
+
+:root {
+    --bright-navy-blue: hsl(214, 57%, 51%);
+    --white: hsl(0, 0%, 100%);
+    --spanish-gray: hsl(0, 0%, 60%);
+    --oxford-blue: hsl(208, 97%, 12%);
+    --light-solid-blue: hsl(210, 100%, 90%);
+    --radius-15: 15px;
+    --transition: 0.25s ease-in-out;
+    --section-padding: 20px;
+    --fs-5: 16px; /* Adjust as needed */
+    --fs-4: 18px; /* Adjust as needed */
+    --fs-2: 24px; /* Adjust as needed */
+    --secondary-color: #4CAF50; /* Example secondary color */
+    --primary-color: #388E3C; /* Example primary color */
+}
+
+/* Ensure the body and html take up the full viewport height */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    color: var(--white);
+}
+
+/* Full-page background image with proper sizing */
+body {
+    background: url('../img/sunset-traffic-arc-de-triomphe-paris-france-bricker.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Hero section styling with full-page coverage */
+.hero {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Adjust alignment of containers */
+    padding: 20px; /* Add padding to avoid content sticking to edges */
+    position: relative;
+}
+
+/* Styling for the login container on the left */
+.login-container {
+    width: 300px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background for readability */
+    border-radius: var(--radius-15);
+    margin-top: 20px; /* Position form slightly up */
+    margin-left: 5%;
+}
+
+.login-container h1 {
+    font-size: calc(1.5rem + 1vw);
+    margin-bottom: 20px;
+    text-align: center; 
+ 
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"],
+.login-container input[type="submit"] {
+    font-size: var(--fs-5);
+    padding: 10px 5px;
+    border-radius: 50px;
+    border: 1px solid var(--spanish-gray);
+    margin-bottom: 15px;
+    width: 80%;
+}
+
+.login-container input[type="submit"] {
+    background: var(--secondary-color);
+    color: var(--white);
+    cursor: pointer;
+    border: none;
+}
+
+.login-container input[type="submit"]:hover {
+    background: var(--primary-color);
+}
+
+.login-container .signup-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-container .signup-link a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Styling for the quote and author */
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: flex-end; /* Align to the right */
+    padding: 20px;
+    width: 50%; /* Adjust width as needed */
+}
+
+.quote-container .quote-text {
+    font-size: var(--fs-2);
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+    text-align: right; /* Align text to the right */
+}
+
+.quote-container .quote-author {
+    font-size: var(--fs-4);
+    font-family: 'Times New Roman', serif;
+    text-align: right; /* Align text to the right */
+}
+

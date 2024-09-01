@@ -1,0 +1,144 @@
+:root {
+    --bright-navy-blue: hsl(214, 57%, 51%);
+    --white: hsl(0, 0%, 100%);
+    --spanish-gray: hsl(0, 0%, 60%);
+    --oxford-blue: hsl(208, 97%, 12%);
+    --light-solid-blue: hsl(210, 100%, 90%);
+    --radius-15: 15px;
+    --transition: 0.25s ease-in-out;
+    --section-padding: 20px;
+    --fs-5: 16px;
+    --fs-4: 18px;
+    --fs-2: 24px;
+    --secondary-color: #4CAF50;
+    --primary-color: #388E3C;
+}
+
+/* Basic reset for body and html */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Layout for signup page */
+.signup-layout {
+    display: flex;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Left side for the signup form */
+.signup-container {
+    width: 40%;
+    background: var(--light-solid-blue);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-container h1 {
+    font-size: calc(1.5rem + 1vw);
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.signup-container form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"],
+.signup-container input[type="submit"] {
+    font-size: var(--fs-5);
+    padding: 10px 5px;
+    border-radius: 50px;
+    border: 1px solid var(--spanish-gray);
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.signup-container input[type="submit"] {
+    background: var(--secondary-color);
+    color: var(--white);
+    cursor: pointer;
+    border: none;
+}
+
+.signup-container input[type="submit"]:hover {
+    background: var(--primary-color);
+}
+
+.signup-container .signup-footer {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.signup-container .login-link {
+    margin-bottom: 10px;
+}
+
+.signup-container .login-link button {
+    font-size: var(--fs-5);
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.signup-container .login-link button:hover {
+    background: var(--secondary-color);
+}
+
+.signup-container .existing-account {
+    margin-top: 10px;
+}
+
+.signup-container .existing-account a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Right side for the image collage */
+.image-collage {
+    width: 60%;
+    background: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    animation: scroll 30s linear infinite;
+}
+
+.image-wrapper img {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Animation for the image collage scrolling */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

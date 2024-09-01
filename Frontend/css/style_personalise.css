@@ -1,0 +1,216 @@
+:root {
+    /* Colors */
+    --united-nations-blue: hsl(214, 56%, 58%);
+    --bright-navy-blue: hsl(214, 57%, 51%);
+    --spanish-gray: hsl(0, 0%, 60%);
+    --black-coral: hsl(225, 8%, 42%);
+    --oxford-blue: hsl(208, 97%, 12%);
+    --yale-blue: hsl(214, 72%, 33%);
+    --blue-ncs: hsl(197, 100%, 36%);
+    --gunmetal: hsl(206, 34%, 20%);
+    --gainsboro: hsl(0, 0%, 88%);
+    --cultured: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --onyx: hsl(0, 0%, 25%);
+    --jet: hsl(0, 0%, 20%);
+    --light-solid-blue: hsl(210, 100%, 90%);
+    --background-image: url('../img/image-asset.jpeg'); /* Placeholder URL for background image */
+    
+    /* Typography */
+    --ff-poppins: "Poppins", sans-serif;
+    --ff-montserrat: "Montserrat", sans-serif;
+    --fs-1: calc(20px + 3.5vw);
+    --fs-2: calc(18px + 1.6vw);
+    --fs-3: calc(16px + 0.45vw);
+    --fs-4: 15px;
+    --fs-5: 14px;
+    --fs-6: 13px;
+    --fs-7: 12px;
+    --fs-8: 11px;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-800: 800;
+    
+    /* Transition */
+    --transition: 0.25s ease-in-out;
+    
+    /* Spacing */
+    --section-padding: 60px;
+    
+    /* Border-radius */
+    --radius-15: 15px;
+    --radius-25: 25px;
+}
+
+/*-----------------------------------*\
+ * #RESET
+\*-----------------------------------*/
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li { list-style: none; }
+a { text-decoration: none; }
+a, img, span, input, label, button, ion-icon { display: block; }
+input, button { background: none; border: none; font: inherit; }
+button { cursor: pointer; }
+input { width: 100%; }
+ion-icon { pointer-events: none; }
+html { font-family: var(--ff-poppins); scroll-behavior: smooth; }
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
+}
+
+/*-----------------------------------*\
+ * #HEADER
+\*-----------------------------------*/
+header {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    color: var(--white);
+}
+
+h1.form-heading {
+    font-size: var(--fs-1);
+    margin-bottom: 10px;
+}
+
+p.form-subheading {
+    font-size: var(--fs-3);
+}
+
+/*-----------------------------------*\
+ * #FORM STYLES
+\*-----------------------------------*/
+#itineraryForm {
+    padding: var(--section-padding);
+    background: var(--light-solid-blue);
+    border-radius: var(--radius-25);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto; /* Center the form horizontally */
+    z-index: 1; /* Ensure the form is above the background collage */
+}
+
+form label {
+    color: var(--black-coral);
+    font-size: var(--fs-4);
+    margin-bottom: 8px;
+    display: flex; /* Use inline-flex to align labels with checkboxes */
+    align-items: center; /* Vertically center items in label */
+}
+
+form input[type="number"],
+form select,
+form input[type="checkbox"] {
+    border-radius: var(--radius-15);
+    padding: 10px 15px;
+    font-size: var(--fs-5);
+    margin-bottom: 15px;
+}
+
+form input[type="number"],
+form select {
+    background: var(--white);
+}
+
+form input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle;
+     /* Align checkboxes with text */
+     transform: translateY(0.2em); 
+}
+
+form input[type="submit"] {
+    background: var(--bright-navy-blue);
+    color: var(--white);
+    border: none;
+    padding: 12px 24px;
+    border-radius: var(--radius-15);
+    font-size: var(--fs-5);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+form input[type="submit"]:hover {
+    background: var(--yale-blue);
+}
+
+/*-----------------------------------*\
+ * #RESPONSE CONTAINER
+\*-----------------------------------*/
+
+#responseContainer {
+    padding: var(--section-padding);
+    background: var(--gainsboro);
+    border-radius: var(--radius-25);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center-align text and buttons */
+}
+
+
+#responseContainer p {
+    color: var(--black-coral);
+    font-size: var(--fs-5);
+    line-height: 1.6; /* Improve line spacing */
+    margin: 0; /* Remove default margin for better spacing control */
+    padding: 0 10px; /* Add padding for better text alignment */
+}
+
+#responseContainer button {
+    background: var(--blue-ncs);
+    color: var(--white);
+    border: none;
+    padding: 12px 24px;
+    border-radius: var(--radius-15);
+    font-size: var(--fs-5);
+    cursor: pointer;
+    margin: 10px; /* Add space around buttons */
+    transition: var(--transition);
+    display: inline-block; /* Align buttons in a row */
+}
+
+
+#responseContainer button:hover {
+    background: var(--yale-blue);
+}
+
+/*-----------------------------------*\
+ * #COLLAGE BACKGROUND
+\*-----------------------------------*/
+#collage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%; /* Adjust width as needed */
+    height: 100%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.3); /* Optional: Add a semi-transparent overlay */
+}
+
+#collage img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    animation: rotateImages 20s linear infinite;
+}
+
+@keyframes rotateImages {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}

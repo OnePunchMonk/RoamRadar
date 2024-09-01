@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="css/style_personalise.css">
+
+
+<head>
+    <title>Travel Itinerary</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="form-heading">Craft Your Perfect Getaway</h1>
+        <p class="form-subheading">Unveil Your Dream Journey with Our Custom Itinerary Generator!</p>
+    </header>
+
+    <form id="itineraryForm">
+        <label for="days">Days (2-5):</label>
+        <input type="number" id="days" name="days" min="2" max="5" required><br><br>
+
+        <label for="price">Price:</label>
+        <select id="price" name="price" required>
+            <option value="Low">Low (100-500)</option>
+            <option value="Mid">Mid (501-1500)</option>
+            <option value="High">High (1501-5000)</option>
+        </select><br><br>
+
+        <label>Categories (Select at least one):</label><br>
+        <input type="checkbox" id="romantic" name="categories" value="Romantic"> Romantic<br>
+        <input type="checkbox" id="family" name="categories" value="Family"> Family<br>
+        <input type="checkbox" id="food_shopping" name="categories" value="Food & Shopping"> Food & Shopping<br>
+        <input type="checkbox" id="art_culture" name="categories" value="Art & Culture"> Art & Culture<br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="responseContainer" style="display: none;">
+        <p id="itineraryResponse"></p>
+        <button id="itinerary-ok">Itinerary OK</button>
+        <button id="not-suitable">Not Suitable</button>
+    </div>
+
+    <script src="js/script_personalise.js">
+
+    </script>
+
+</body>
+
+</html>

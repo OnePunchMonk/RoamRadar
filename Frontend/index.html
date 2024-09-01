@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoamRadar- Travel agancy</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="img/e589d6cd-33d7-4751-aab3-273173e63366.jpeg" type="image/svg+xml">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="top">
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+
+        <div class="overlay" data-overlay></div>
+
+        <div class="header-top">
+            <div class="container">
+
+                <a href="tel:+01123456790" class="helpline-box">
+
+
+
+                    <div class="wrapper">
+                        <p class="helpline-title">For Further Inquires :</p>
+
+                        <p class="helpline-number">+01 (123) 4567 90</p>
+                    </div>
+
+
+                    <div class="icon-box">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </div>
+
+
+
+                </a>
+
+                <a href="#" class="logo">
+
+
+
+
+
+                    <img src="img/_e589d6cd-33d7-4751-aab3-273173e63366.jpeg" alt="roamradar logo" height="80px"
+                        width="80px">
+                </a>
+
+                <div class="header-btn-group">
+
+
+                </div>
+            </div>
+
+
+    </header>
+
+
+
+
+
+    <main>
+        <article>
+
+            <!-- 
+        - #HERO
+      -->
+
+            <section class="hero" id="home">
+                <div class="container">
+
+                    <h2 class="h1 hero-title">Craft your trip to Paris</h2>
+
+
+
+                    <div class="btn-group">
+                        <a href="#blog-paris" class="btn btn-primary">Learn more</a>
+
+
+                        <a href="signup.html">
+                            <button class="btn btn-secondary">Create a Plan Now!</button>
+
+                        </a>
+                    </div>
+
+
+                </div>
+            </section>
+
+
+
+            <!-- 
+    - #BLOG PARIS
+-->
+            <section class="blog-paris" id="blog-paris">
+                <div class="container">
+
+                    <p class="section-subtitle">Explore Paris</p>
+
+                    <h2 class="h2 section-title">Discover the Magic of Paris</h2>
+
+                    <p class="section-text">
+                        Paris, known as the City of Light, is famed for its rich history, stunning architecture, and
+                        vibrant culture. From iconic landmarks like the Eiffel Tower and the Louvre Museum to charming
+                        neighborhoods such as Montmartre, Paris offers a blend of romance, art, and gastronomy. Dive
+                        into the heart of this enchanting city and uncover its hidden gems and timeless beauty.
+                    </p>
+
+                    <div class="blog-content">
+                        <div class="blog-item">
+                            <div class="text-content">
+                                <p class="section-text">
+                                    Paris is not just about the landmarks but also about experiencing the local culture
+                                    and cuisine.
+                                    Wander through picturesque streets, enjoy a café au lait in a charming bistro, or
+                                    take a
+                                    leisurely stroll along the Seine. Whether you're here for a romantic getaway or a
+                                    cultural
+                                    adventure, Paris promises an unforgettable experience.
+                                </p>
+                            </div>
+                            <div class="image-content">
+                                <img src="img/istockphoto-507628634-612x612.jpg" alt="Paris skyline" loading="lazy">
+                            </div>
+                        </div>
+
+                        <div class="blog-item">
+                            <div class="image-content">
+                                <img src="img/images_(1).jpeg" alt="Streets of Paris" loading="lazy">
+                            </div>
+                            <div class="text-content">
+                                <p class="section-text">
+                                    Paris is not just about the landmarks but also about experiencing the local culture
+                                    and cuisine.
+                                    Wander through picturesque streets, enjoy a café au lait in a charming bistro, or
+                                    take a
+                                    leisurely stroll along the Seine. Whether you're here for a romantic getaway or a
+                                    cultural
+                                    adventure, Paris promises an unforgettable experience.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="blog-item">
+                            <div class="image-content">
+                                <img src="img/images.jpeg" alt="Parisian cafe" loading="lazy">
+                            </div>
+                            <div class="text-content">
+                                <p class="section-text">
+                                    Paris is not just about the landmarks but also about experiencing the local culture
+                                    and cuisine.
+                                    Wander through picturesque streets, enjoy a café au lait in a charming bistro, or
+                                    take a
+                                    leisurely stroll along the Seine. Whether you're here for a romantic getaway or a
+                                    cultural
+                                    adventure, Paris promises an unforgettable experience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
+            <section id="share-review">
+                <h2>Share an Anonymous Review</h2>
+                <form id="review-form">
+                    Rating: <input type="number" name="ratings" min="1" max="5" required
+                        oninput=displayInput(this.value)><br>
+                    Review: <textarea name=" review" required oninput=displayInput(this.value)></textarea><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+
+
+            <section class="reviews" id="reviews">
+                <p class="section-subtitle">What our Customers Say</p>
+                <div id="reviews-container">
+                    <button id="left-btn">←</button>
+                    <div id="reviews-content">
+                        <!-- Reviews will be dynamically inserted here -->
+                    </div>
+                    <button id="right-btn">→</button>
+                </div>
+            </section>
+
+
+
+
+            <section class="chart-section" id="ratings-chart">
+                <div class="container">
+                    <h2 class="h2 section-title">Customer Ratings</h2>
+                    <div style="width: 80%; margin: 0 auto;">
+                        <canvas id="myChart"></canvas>
+                    </div>
+
+
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+            <!-- 
+        - #CTA
+      -->
+
+            <section class="cta" id="contact">
+                <div class="container">
+
+                    <div class="cta-content">
+                        <p class="section-subtitle">Call To Action</p>
+
+                        <h2 class="h2 section-title">Ready For Unforgatable Travel. Remember Us!</h2>
+
+                        <p class="section-text">
+                            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum
+                            cumque
+                            laudantium. Sit ornare
+                            mollitia tenetur, aptent.
+                        </p>
+                    </div>
+
+                    <button class="btn btn-secondary">Contact Us !</button>
+
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+
+
+
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div class="container">
+
+                <div class="footer-brand">
+
+                    <a href="#" class="logo">
+                        <!-- <img src="main_frontend/Designer.png" alt="roamradar logo"> -->
+
+                        <img src="img/_e589d6cd-33d7-4751-aab3-273173e63366.jpeg" alt="roamradar logo" height="80px"
+                            width="80px">
+
+                    </a>
+
+                    <p class="footer-text">
+                        Urna ratione ante harum provident, eleifend, vulputate molestiae proin fringilla, praesentium
+                        magna conubia
+                        at
+                        perferendis, pretium, aenean aut ultrices.
+                    </p>
+
+                </div>
+
+                <div class="footer-contact">
+
+                    <h4 class="contact-title">Contact Us</h4>
+
+                    <p class="contact-text">
+                        Feel free to contact and reach us !!
+                    </p>
+
+                    <ul>
+
+                        <li class="contact-item">
+                            <ion-icon name="call-outline"></ion-icon>
+
+                            <a href="tel:+01123456790" class="contact-link">+01 (123) 4567 90</a>
+                        </li>
+
+                        <li class="contact-item">
+                            <ion-icon name="mail-outline"></ion-icon>
+
+                            <a href="mailto:info.roamradar.com" class="contact-link">info.roamradar.com</a>
+                        </li>
+
+                        <li class="contact-item">
+                            <ion-icon name="location-outline"></ion-icon>
+
+                            <address>3146 Koontz, California</address>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-form">
+
+                    <p class="form-text">
+                        Subscribe our newsletter for more update & news !!
+                    </p>
+
+                    <form action="" class="form-wrapper">
+                        <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+
+                        <button type="submit" class="btn btn-secondary">Subscribe</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+
+
+                <ul class="footer-bottom-list">
+
+                    <li>
+                        <a href="#" class="footer-bottom-link">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-bottom-link">Term & Condition</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-bottom-link">FAQ</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+    <!-- 
+    - #GO TO TOP
+  -->
+
+    <a href="#top" class="go-top" data-go-top>
+        <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
+
+
+
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const reviewsContent = document.getElementById('reviews-content');
+            const leftBtn = document.getElementById('left-btn');
+            const rightBtn = document.getElementById('right-btn');
+
+            let reviews = [];
+            let currentIndex = 0;
+
+            // Fetch reviews from the API
+            async function fetchReviews() {
+                try {
+                    const response = await fetch('https://calm-escarpment-78164-50c814329612.herokuapp.com/get_reviews');
+                    reviews = await response.json();
+                    displayReviews();
+                } catch (error) {
+                    console.error('Error fetching reviews:', error);
+                }
+            }
+
+            // Display reviews in the container
+            function displayReviews() {
+                reviewsContent.innerHTML = '';
+                for (let i = currentIndex; i < currentIndex + 3 && i < reviews.length; i++) {
+                    const reviewBox = document.createElement('div');
+                    reviewBox.className = 'review-box';
+                    reviewBox.innerHTML = `<p>${reviews[i]}</p>`;
+                    reviewsContent.appendChild(reviewBox);
+                }
+            }
+
+            // Update review boxes on button click
+            leftBtn.addEventListener('click', () => {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    displayReviews();
+                }
+            });
+
+            rightBtn.addEventListener('click', () => {
+                if (currentIndex + 3 < reviews.length) {
+                    currentIndex++;
+                    displayReviews();
+                }
+            });
+
+            // Initial fetch and display
+            fetchReviews();
+        });
+
+    </script>
+
+
+
+    <script>
+
+
+        async function fetchRatings() {
+            try {
+                const response = await fetch('https://calm-escarpment-78164-50c814329612.herokuapp.com/ratings');
+
+                if (!response.ok) throw new Error('Network response was not ok.');
+                const data = await response.json();
+                console.log('Fetched ratings data:', data);
+                return data;
+
+            } catch (error) {
+                console.error('Error fetching ratings:', error);
+                return []; // Return an empty array in case of error
+            }
+        }
+
+        // Function to render the chart using fetched data
+        async function renderChart() {
+            // Fetch ratings data
+            const ratingsData = await fetchRatings();
+
+            // Prepare labels and data for the chart
+            const labels = ['1 Star', '2 Stars', '3 Stars', '4 Stars', '5 Stars'];
+            const data = [0, 0, 0, 0, 0];
+
+            // Populate the data array based on the fetched ratings data
+            ratingsData.forEach(rating => {
+                if (rating._id >= 1 && rating._id <= 5) {
+                    data[rating._id - 1] = rating.count;
+                }
+            });
+            console.log('Data for chart:', data);
+            // Get the context of the canvas element
+            const ctx = document.getElementById('myChart').getContext('2d');
+
+            // Create the chart with dynamic data
+            const myChart = new Chart(ctx, {
+                type: 'bar', // or 'line', 'pie', etc.
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Number of Reviews',
+                        data: data, // Dynamic data from the backend
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
+        // Add event listener to execute renderChart after the DOM content is loaded
+        document.addEventListener("DOMContentLoaded", renderChart);
+
+
+    </script>
+
+    <script>
+
+        function displayInput(value) {
+            document.getElementById('display').textContent = value;
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            // Event listener for the review form submission
+            const reviewForm = document.getElementById('review-form');
+
+            reviewForm.addEventListener('submit', async (event) => {
+                event.preventDefault(); // Prevent the form from submitting the traditional way
+
+                // Retrieve the form input values
+                const ratings = reviewForm.querySelector('input[name="ratings"]').value;
+                const review = reviewForm.querySelector('textarea[name="review"]').value;
+
+                try {
+                    // Send POST request to the Flask API endpoint
+                    const response = await fetch('https://thawing-eyrie-19296-07f5925e2a04.herokuapp.com/add_review', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json' // Set the request content type to JSON
+                        },
+                        body: JSON.stringify({
+                            ratings: ratings,
+                            review: review
+                        })
+                    });
+
+                    // Handle the response from the server
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+
+                    const data = await response.json();
+
+                    // Show success or error message based on response
+                    if (data.success) {
+                        alert('Review submitted successfully');
+                    } else {
+                        alert(`Failed to submit review: ${data.message}`);
+                    }
+                } catch (error) {
+                    // Handle errors in the request
+                    console.error('Error:', error);
+                    alert(`Error submitting review: ${error.message}`);
+                }
+            });
+        });
+    </script>
+
+
+    <script src="js/script.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</body>
+
+</html>
