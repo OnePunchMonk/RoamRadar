@@ -1,0 +1,3 @@
+[submodule "Backend/heroku_dep1"]
+	path = Backend/heroku_dep1
+	url = https://git.heroku.com/knnfirst.git
