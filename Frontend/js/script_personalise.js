@@ -1,6 +1,17 @@
         // Temporary user ID generation (for demonstration purposes)
         const temporaryUserId = 'user_' + Math.floor(Math.random() * 1000000);
 
+        function formatItineraryText(text) {
+            // Replace text between asterisks with bold text
+            const formattedText = text.replace(/\*(.*?)\*/g, '<strong>$1</strong>');
+        
+            // Insert new lines where there are line breaks in the original text
+            const formattedWithNewLines = formattedText.replace(/\n/g, '<br>');
+        
+            return formattedWithNewLines;
+        }
+
+
         document.getElementById('itineraryForm').addEventListener('submit', function (event) {
             event.preventDefault(); // Prevent default form submission
 
@@ -36,7 +47,18 @@
                     if (data.error) {
                         alert(data.error);
                     } else {
-                        document.getElementById('itineraryResponse').textContent = `Predicted Cluster: ${data.prediction}`; // Display the response
+
+
+                        
+                        const itineraryText=`Predicted Cluster: ${data.prediction}`;;
+
+                        const formattedItinerary = formatItineraryText(itineraryText);
+                        // document.getElementById('itineraryResponse').textContent =formattedItinerary;
+
+
+
+                        document.getElementById('itineraryResponse').textContent = formattedItinerary;
+                        // Display the response
                         document.getElementById('responseContainer').style.display = 'block'; // Show the response container with buttons
                     }
                 })
@@ -148,7 +170,10 @@
                         alert(data.error);
                     } else {
                         console.log("Creating a new itinerary...");
-                        document.getElementById('itineraryResponse').textContent = `Generated Itinerary: ${data.Itinerary}`; // Display the new itinerary
+                        const itineraryText=`Generated Itinerary: ${data.Itinerary}`;
+
+                        const formattedItinerary = formatItineraryText(itineraryText);
+                        document.getElementById('itineraryResponse').textContent =formattedItinerary; // Display the new itinerary
                         document.getElementById('responseContainer').style.display = 'block'; // Show the response container with buttons
                     }
                 })
