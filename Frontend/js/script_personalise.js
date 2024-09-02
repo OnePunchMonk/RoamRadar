@@ -171,7 +171,7 @@
                     } else {
                         console.log("Creating a new itinerary...");
                         const itineraryText=`Generated Itinerary: ${data.Itinerary}`;
-
+                        console.log(itineraryText);
                         const formattedItinerary = formatItineraryText(itineraryText);
                         document.getElementById('itineraryResponse').textContent =formattedItinerary; // Display the new itinerary
                         document.getElementById('responseContainer').style.display = 'block'; // Show the response container with buttons
