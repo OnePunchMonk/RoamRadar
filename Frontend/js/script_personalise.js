@@ -173,7 +173,7 @@
                         const itineraryText=`Generated Itinerary: ${data.Itinerary}`;
                         console.log(itineraryText);
                         const formattedItinerary = formatItineraryText(itineraryText);
-                        document.getElementById('itineraryResponse').textContent =formattedItinerary; // Display the new itinerary
+                        document.getElementById('itineraryResponse').innerHTML =formattedItinerary; // Display the new itinerary
                         document.getElementById('responseContainer').style.display = 'block'; // Show the response container with buttons
                     }
                 })
