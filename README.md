@@ -1,10 +1,6 @@
 
 # RoamRadar
 
-# Travel Itinerary Generator
-
-## Description
-
 This project is a web application that generates personalized travel itineraries based on user preferences. It combines Flask for the backend, MongoDB for data storage, and machine learning techniques to provide tailored travel recommendations. The application is deployed on Heroku, where REST APIs manage user interactions and data processing.
 
 ## Tech Stack
@@ -28,6 +24,6 @@ This project is a web application that generates personalized travel itineraries
 
 ### Note:
 **Incase you intend to test the website 
--1)Click on Create a Plan Now!
+-1) Click on Create a Plan Now!
 -2) Sign up with a valid email id 
 -3) You'll be able to access the itinerary generator page
